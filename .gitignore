@@ -1,0 +1,13 @@
+# Ignore everything
+*
+
+# Allow gitignore itself
+!.gitignore
+
+# Allow README and requirements
+!README.md
+!requirements.txt
+
+# Allow this project folder
+!Ridge_Aastha_Laso_ERP/
+!Ridge_Aastha_Laso_ERP/**

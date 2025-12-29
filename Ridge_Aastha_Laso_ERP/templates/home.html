@@ -1,0 +1,23 @@
+
+<h1>FWI Prediction App</h1>
+
+<!-- st.write("Welcome to the Fire Weather Index (FWI) Prediction Application. This app helps in predicting fire weather conditions based on various meteorological parameters.") -->
+
+<form action="{{url_for('predict_datapoint')}}" method="post">
+    
+    <input type="text" id="Temperature" name="Temperature" required="required"><br><br>
+    <input type="text" id="RH" name="RH" required="required"><br><br>
+    <input type="text" id="Ws" name="Ws" required="required"><br><br>
+    <input type="text" id="Rain" name="Rain" required="required"><br><br>
+    <input type="text" id="FFMC" name="FFMC" required="required"><br><br>
+    <input type="text" id="DMC" name="DMC" required="required"><br><br>
+    <input type="text" id="ISI" name="ISI" required="required"><br><br>
+    <input type="text" id="Classes" name="Classes" required="required"><br><br>
+    <input type="text" id="Region" name="Region" required="required"><br><br>
+
+    <button type="submit" class="btn btn-block btn-large btn-primary">Predict</button>
+
+</form>
+
+<h2>Result is : </h2>
+<h2>{{results}}</h2>
